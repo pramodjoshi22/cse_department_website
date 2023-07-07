@@ -236,7 +236,9 @@ h6,
         font-size: 30px;
         font-weight: 600 !important;
     }
-   
+    .carousel-caption h4{
+        caret-color:var(--light);
+    }
 }
 
 .carousel-control-prev,

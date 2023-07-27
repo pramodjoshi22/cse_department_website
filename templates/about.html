@@ -1,0 +1,119 @@
+{%extends 'base1.html'%} {%block start%}{%load static%}
+<!-- Full Screen Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+            <div class="modal-header border-0">
+                <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center justify-content-center">
+                <div class="input-group" style="max-width: 600px;">
+                    <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                    <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Full Screen Search End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                    <h1 class="mb-0">Vision behind to start this university</h1>
+                </div>
+                <p class="mb-4">Reflecting upon the accomplishments of Graphic Era in last 29 years, I can say with conviction that it has adapted remarkably well to the quantum of changes. From Graphic Era Institute of Technology to Graphic Era Group of Institutions,
+                    it has progressed extraordinarily and kept abreast with the advancements in the field of academics, pedagogy and growing demands of industry.<br/><br/> To keep up with the rapidly evolving higher education ecosystem, Graphic Era University
+                    has now launched online and open distance learning program at par with the world-class academic standards of its regular campus-based degrees. The goal is to provide a universal and flexible access to quality education and build an
+                    inclusive learning environment for all.<br/><br/> Graphic Era is competing boldly, taking new pathways yet staying grounded to its mission of delivering quality education, teaching excellence, and innovative study programs. The benchmarks
+                    that we have created in the educational domain has become hallmark in the industry, this gives me immense pride in the people who learn and work here and those who support our mission.<br/><br/> Whether you are part of our Graphic
+                    Era Community, or in the process of joining us through study programs or research, I am proud to welcome you to our vibrant campus.</p>
+
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{% static 'img/Kamalsir.jpg' %} " style="object-fit: cover;">
+                </div>
+                <h3 style="text-align:center;"><br/> Prof. (Dr.) Kamal Ghanshala </h3>
+                <p style="text-align:center;">President, Graphic Era Group of Institutions </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Team Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Our Distinguished Faculty</h5>
+            <p style="text-align:center;">Our teachers are the source of our Academic Excellence and we at Graphic Era ensure the delivery of higher education of the highest order from some of the best faculty in the world. Graphic Era boasts of a large number of faculty who are educated
+                from the Premier Institutions of India and abroad, including IITs, NITs, IISc Bangalore, IIMs and more.</p>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/Kamal_sir.jpg' %}" alt="">
+
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Prof. (Dr.) Kamal Ghanshala</h4>
+                        <p class="text-uppercase m-0">Chancellor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/Kamal_sir.jpg' %}" alt="">
+
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Dr. J.Kumar </h4>
+                        <p class="text-uppercase m-0">Pro-Chancellor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/sanjaysir.jpg' %}" alt="">
+
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Prof. (Dr) Sanjay Jasola</h4>
+                        <p class="text-uppercase m-0">Vice Chancellor</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="text-align: center;" class="mb-0"><br/>“A Visionary who dreamt and realized his dreams”</h1>
+            <h5 style="text-align: center;" class="fw-bold text-primary text-uppercase"><br/>Message from the Desk of Chancellor, Prof. (Dr) Kamal Ghanshala<br/></h5>
+        </div>
+        <p style="text-align:justify;" class="mb-4">Today as I look back at the accomplishments of Graphic Era in last 30 years. From Graphic Era Institute of Technology to Graphic Era University and Graphic Era Hill University, it has progressed and kept abreast of the rapid changes taking place
+            in the field of academic, pedagogical spheres and growing demand of industry for highly skilled manpower. Today colleges and universities are facing changing student demographics, issues of quality and value and increased competition. Their
+            success requires transformative change to enable new teaching and learning approaches. As higher education is rapidly evolving, Graphic Era is at the cutting edge of the movement. We are competing boldly and taking new paths—yet staying grounded
+            to our mission of delivering quality education, building teaching excellence, introducing innovative study programs, customizing and updating our course content to match the industry requirements, setting records in placement, research and
+            consultancy.
+            <br/> Creative and inventive culture, nurtured by our faculty, students and staff, is transforming how we train our students and help them to strengthen their future prospects. In developing Graphic Era Hill University, we have partnered with
+            leaders in corporate sector and research organizations of the country and international universities, for training and placements of our students. We’re leveraging these creative partnerships to stretch our boundaries of excellence collaboration,
+            innovation and creation of skills, across numerous disciplinary fronts. The deep integration of technology in learning has made learning mobile and self-directed. The ultimate goal of learning is; critical thinking, generating work skills,
+            communication, creativity, collaboration, character, education, and citizenship and technology is assisting in big way in accelerating these ideals and making learning irresistibly engaging. With recognition from prestigious institutions Graphic
+            Era University is setting new benchmarks in education.<br/> For students the experience of being at Graphic Era Hill University is rich and diverse. Our academic programs are of high quality, geared towards industry requirements. They are
+            competitive and industry driven, ranging from engineering, science, technology, business, management, commerce, hospitality to humanities and social sciences and our initiative expands to all round knowledge. Our curriculum and pedagogy includes
+            certain ideological inputs, behavioral content and team building aspects, for enhancement of hard and soft skills amongst the students. University also offers study-abroad programs and internship programs in leading organizations of the country
+            and international exposure at premier universities around the world.<br/> Our aim is to provide the best possible environment for teaching, learning and research to the diverse pool of young talent. The kind of resourcefulness and creativity
+            that has become the hallmark of Graphic Era Hill University gives me immense pride in this institution, in the people who learn and work here, and in those who support our mission.<br/> Whether you are part of our Graphic Era Community, or
+            in the process of joining us — through study programs or research — I am proud to welcome you to our vibrant campus.</p>
+    </div>
+</div>
+</div>
+<!-- Team End -->
+
+{%endblock%}

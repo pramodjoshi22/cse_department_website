@@ -1,0 +1,40 @@
+{%extends 'base1.html'%} {%load static%} {%block start%}
+<h1 style="text-align: center;" class="mb-0">Paper Published-GEHU</h1>
+<br/>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+        width: auto;
+        /* This makes the columns auto-adjustable */
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Author Names</th>
+        <th>Topic of the Paper</th>
+        <th>Link to the Paper</th>
+    </tr>
+    {% for i in research_paper %}
+    <tr>
+        <td><b>{{i.author_names}}</b></td>
+        <td><b><i>{{i.topic}}</i></b></td>
+        <td><a href="{{ i.link }}" target="_blank"><b>View_Paper</b></a></td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<br/> {%endblock%}

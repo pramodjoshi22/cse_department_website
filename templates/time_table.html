@@ -1,0 +1,30 @@
+{%extends 'base1.html'%} {%load static%} {%block start%}
+
+
+
+<!--  -->
+<br>
+<h1>Time Table</h1>
+<br>
+<style>
+    .arrow-list {
+        list-style-type: none;
+    }
+    
+    .arrow-list li:before {
+        content: "\2192";
+        /* Unicode character for right arrow */
+        margin-right: 5px;
+        font-weight: bold;
+    }
+</style>
+<ul class="arrow-list">
+    {% for file in file %}
+    <li class="list-group-item">
+        <a href="{{file.file.url}}" target="_blank"><b>{{file.title}}</b></a></li>
+
+    {% endfor %}
+</ul>
+<!--  -->
+
+{%endblock%}

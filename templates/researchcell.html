@@ -1,0 +1,52 @@
+{%extends 'base1.html'%} {%load static%} {%block start%}
+
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Research Cell</h5>
+            <h1 class="mb-0">Core Members / Mentors</h1>
+        </div>
+
+
+        <div class="row g-5">
+            {% for i in img1 %}
+
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{{ i.file.url }}" alt="" style="object-fit: cover; aspect-ratio: 1 / 1;">
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">{{ i.name }}</h4>
+                        <p class="text-uppercase m-0">{{ i.department }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+
+        <p style="text-align:justify;" class="mb-4">The college has taken a remarkable step towards fostering a culture of research and innovation by establishing a dedicated Research Cell Group for its students. This forward-thinking initiative aims to cultivate a passion for inquiry, critical
+            thinking, and problem-solving among the student body. The Research Cell Group provides a supportive and collaborative environment, encouraging students from various disciplines to explore their interests and engage in cutting-edge research
+            projects. Under the mentorship of experienced faculty members, students are exposed to the latest research methodologies and given opportunities to conduct their investigations independently. The group also organizes workshops, seminars, and
+            guest lectures by renowned researchers to expose the students to diverse perspectives and emerging trends in their fields of study. By actively participating in the Research Cell Group, students not only enhance their academic prowess but
+            also develop valuable skills like teamwork, communication, and perseverance. Moreover, the group encourages students to publish their findings in reputed journals and present their work at national and international conferences, thereby nurturing
+            a sense of accomplishment and recognition. Ultimately, the Research Cell Group serves as a catalyst for intellectual growth and creativity, empowering students to become leaders in their respective fields and contribute meaningfully to the
+            advancement of knowledge and society as a whole.
+            <br><br> The establishment of a dedicated Research Cell Group within the college represents a significant stride in nurturing a vibrant culture of research and innovation on campus. It stands as a testament to the institution's commitment
+            to providing its students with a holistic and enriching education that goes beyond conventional classroom learning. The Research Cell Group acts as a beacon, drawing together inquisitive minds from diverse academic backgrounds, fostering a
+            dynamic community of scholars who share a passion for discovery. This amalgamation of varied perspectives not only enriches the research projects undertaken but also fosters a sense of camaraderie among students who may have previously been
+            confined to their respective disciplines. In this collaborative environment, students are encouraged to explore their interests freely and delve into cutting-edge topics that resonate with their intellectual curiosity. The guidance and mentorship
+            provided by experienced faculty members play a crucial role in empowering students to think critically, design robust experiments, and analyze data meticulously. The Research Cell Group thrives on the principles of inclusivity and accessibility,
+            ensuring that all students, regardless of their academic background or year of study, have equal opportunities to participate and contribute. This inclusive approach not only nurtures diversity but also amplifies the potential for groundbreaking
+            interdisciplinary research.
+
+        </p>
+    </div>
+</div>
+<br/> {%endblock%}

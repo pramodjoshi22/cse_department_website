@@ -1,0 +1,25 @@
+{%extends 'base1.html'%} {%block start%} {%load static%}
+
+<br>
+<h1>Syllabus PDF Files</h1>
+<br>
+<style>
+    .arrow-list {
+        list-style-type: none;
+    }
+    
+    .arrow-list li:before {
+        content: "\2192";
+        /* Unicode character for right arrow */
+        margin-right: 5px;
+        font-weight: bold;
+    }
+</style>
+<ul class="arrow-list">
+    {% for pdf in pdf %}
+    <li class="list-group-item">
+        <a href="{{ pdf.file.url }}" target="_blank"><b>{{ pdf.title }}</b></a></li>
+
+    {% endfor %}
+</ul>
+{%endblock%}

@@ -50,75 +50,83 @@
 
 
 
-    <!-- Navbar & Carousel Start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="{% url 'home'%}" class="navbar-brand p-0">
-                <h1 class="m-0">CSE <img src="{% static 'img/gehu.svg' %}" alt="GEHU" style="width: 220px; height: 90%; max-width: 300px;"></h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="{% url 'home'%}" class="nav-item nav-link active">Home</a>
-                    <a href="{% url 'about'%}" class="nav-item nav-link">About Us</a>
-                    <div class="nav-item dropdown">
-                        <a href="{% url 'syllabus'%}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Course Curriculum</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="{% url 'syllabus'%}" class="dropdown-item">Syllabus</a>
-                            <a href="{%url 'timetable'%}" class="dropdown-item">Time-Table</a>
-                            <a href="{%url 'faculty'%}" class="dropdown-item">Faculty Details</a>          
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="{%url 'hackathons'%}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="{%url 'hackathons'%}" class="dropdown-item">Hackerthons</a>
-                            <a href="{%url 'coding'%}" class="dropdown-item">Coding Events</a>       
-                        </div>
-                    </div>
-                
-               <!--    <a href="Interships.html" class="nav-item nav-link">Interships</a> --> 
-                 
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Research</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="{%url 'research_cell'%}" class="dropdown-item">Research Cell</a>
-                            <a href="{%url 'paper_published'%}" class="dropdown-item">Paper Published</a>
-                        </div>
-                    </div>
-                  <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="Projects.html" class="dropdown-item">Topics</a>
-                            <a href="Projects.html" class="dropdown-item">Resources</a>
-                            <a href="Projects.html" class="dropdown-item">Mentors</a>
-
-                        </div>
-                    </div> --> 
-               <!--    <a href="contact.html" class="nav-item nav-link">Contact</a> --> 
-                </div>
-              
-                <a href="{%url 'notices'%}" class="btn btn-primary py-2 px-4 ms-3">Notices</a>
-            </div>
-        </nav>
-
-
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img class="w-100" src="{% static 'img/btl.png' %}" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+ <!-- Navbar & Carousel Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="{%url 'home'%}" class="navbar-brand p-0">
+            <h1 class="m-0">CSE <img src="{%static 'img/gehu.svg'%}" alt="GEHU" style="width: 220px; height: 90%; max-width: 300px;"></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="{%url 'home'%}" class="nav-item nav-link active">Home</a>
+                <a href="{%url 'about'%}" class="nav-item nav-link">About Us</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Course Curriculum</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{% url 'syllabus'%}" class="dropdown-item">Syllabus</a>
+                        <a href="{% url 'timetable'%}" class="dropdown-item">Time-Table</a>
+                        <a href="{%url 'faculty'%}" class="dropdown-item">Faculty Details</a>          
                     </div>
                 </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{%url 'hackathons'%}" class="dropdown-item">Hackerthons</a>
+                        <a href="{%url 'coding'%}" class="dropdown-item">Coding Events</a>       
+                    </div>
+                </div>
+            
+               
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Research</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{%url 'research_cell'%}" class="dropdown-item">Topics</a>
+                        <a href="{%url 'paper_published'%}" class="dropdown-item">Paper Published</a>
+                    </div>
+                </div>
+             
+           <!--    <a href="contact.html" class="nav-item nav-link">Contact</a> --> 
             </div>
-
+            <butaton type="button"  class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+            <a href="{%url 'notices'%}" class="btn btn-primary py-2 px-4 ms-3">Notices</a>
+        </div>
+    </nav>
+    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">About Us</h1>
+                <a href="{%url 'home'%}" class="h5 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h5 text-white">About</a>
+            </div>
         </div>
     </div>
+</div>
+<!-- Navbar & Carousel End -->
 
-    <!-- Navbar & Carousel End -->
+   
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
     {%block start%} {%endblock%}
 
 

@@ -7,18 +7,24 @@
 <h1 style="text-align: center;">Time Table</h1>
 <br>
 <style>
-    .arrow-list {
+     .arrow-list {
         list-style-type: none;
     }
-    
+    .arrow-list li{
+        width: 400px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+    }
     .arrow-list li:before {
         content: "\2192";
         /* Unicode character for right arrow */
-        margin-right: 5px;
+        margin-right:5px;
+        
         font-weight: bold;
     }
 </style>
-<ul class="arrow-list">
+<ul style="text-align: center;" class="arrow-list">
     {% for file in file %}
     <li class="list-group-item">
         <a href="{{file.file.url}}" target="_blank"><b>{{file.title}}</b></a></li>

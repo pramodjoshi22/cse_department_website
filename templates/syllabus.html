@@ -8,7 +8,7 @@
         list-style-type: none;
     }
     .arrow-list li{
-        width: 450px;
+        width: 400px;
         display: inline-block;
         vertical-align: top;
         margin: 5px;
@@ -21,7 +21,7 @@
         font-weight: bold;
     }
 </style>
-<ul class="arrow-list">
+<ul style="text-align: center;" class="arrow-list">
     {% for pdf in pdf %}
     <li class="list-group-item">
         <a href="{{ pdf.file.url }}" target="_blank"><b>{{ pdf.title }}</b></a></li>

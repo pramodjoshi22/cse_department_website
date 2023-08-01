@@ -437,64 +437,33 @@
 
 
     <!-- Testimonial Start -->
+    <style>
+        .testimonial-item img {
+            max-width: 100%;
+            max-height: 400px;
+            /* Set the maximum height you desire */
+            object-fit: contain;
+            /* Optional: to maintain the aspect ratio */
+        }
+    </style>
+
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase"></h5>
-                <h1 class="mb-0">Star Alumni Students </h1>
+                <h1 class="mb-0">Star Alumni Students</h1>
             </div>
+
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                {% for a in alumni %}
                 <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="{%static 'img/alumni/pramod.jpg' %}" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Pramod</h4>
-                            <small class="text-uppercase">GEHU </small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
+                    <img class="img-fluid rounded" src="{{ a.banner.url }}">
                 </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="{%static 'img/alumni/pramod.jpg' %}" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Name</h4>
-                            <small class="text-uppercase">corrent company </small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="{%static 'img/alumni/pramod.jpg' %}" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Name</h4>
-                            <small class="text-uppercase">corrent company </small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="{%static 'img/alumni/pramod.jpg' %}" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Name</h4>
-                            <small class="text-uppercase">corrent company </small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
+
     <!-- Testimonial End -->
 
 
@@ -508,7 +477,7 @@
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
                 
-                <h1 class="mb-0">Company Associated with College </h1>
+                <h1 class="mb-0">Companies Associated with College </h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
             </div>

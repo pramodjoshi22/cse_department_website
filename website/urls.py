@@ -34,6 +34,7 @@ urlpatterns = [
     path('hackathons/',views.HACKATHONS,name='hackathons'),
     path('coding/',views.CODING_EVENTS,name='coding'),
     path('research_cell/',views.RESEARCH_CELL_faculty,name='research_cell'),
+    path('developers/',views.DEVELOPERS,name='developers'),
     path('paper_published/',views.PAPER_PUBLISHED,name='paper_published'),
     path('notices',views.NOTICES,name='notices')
    

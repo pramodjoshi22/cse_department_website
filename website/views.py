@@ -12,6 +12,9 @@ def HOME(request):
 def ABOUT(request):
     return render(request,'about.html')
 
+def DEVELOPERS(request):
+    return render(request,'developers.html')
+
 def SYLLABUS(request):
     pdf=Syllabus.objects.all()
     

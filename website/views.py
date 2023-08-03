@@ -50,10 +50,6 @@ def DEVELOPERS(request):
     page_name = "Developers"
     return render(request,'developers.html',{'page_name': page_name})
 
-def Gallery(request):
-    page_name = "Gallery"
-    return render(request,'gallery.html',{'page_name': page_name})
-
 def HACKATHONS(request):
     page_name="Hackathons"
     events=Hackathons.objects.all()

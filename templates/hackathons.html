@@ -67,19 +67,24 @@
 
 <h1 style="text-align: center;" class="mb-0">This Page Under Construction.</h1>
 
-<br/> {% for i in events %}
+<div class="row g-5">
+    {% for i in events %}
 
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <img src="{{i.file.url}}" style="width:100%">
-            <h2>Title</h2>
-            <p>Text</p>
+    <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+        <div class="team-item bg-light rounded overflow-hidden">
+            <div class="team-img position-relative overflow-hidden">
+                <img class="img-fluid w-100" src="{{i.file.url}}" alt="">
+               
+            </div>
+          
         </div>
     </div>
-    </a>
+    {% endfor %}
+
 </div>
-{% endfor %}
+
+
+
 
 
 

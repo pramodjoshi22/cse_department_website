@@ -90,10 +90,4 @@ def PAPER_PUBLISHED(request):
 
 def NOTICES(request):
     page_name="Notices"
-    file=NoticePdf.objects.all()
-    img=Notice_Banner.objects.all()
-    
-    context={'file' : file,
-             'page_name': page_name,
-             'img':img}
-    return render(request,'notices.html',context)
+    return render(request,'notices.html',{'page_name': page_name})

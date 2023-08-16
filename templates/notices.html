@@ -1,61 +1,72 @@
-{%extends 'base1.html'%} {%load static%} {%block start%}
+{%extends 'base1.html'%} {%block start%} {%load static%}
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-   
+<br>
+<center>
+    <h1>Important Updates !</h1>
+</center>
 
- 
-<!-- Blog Start -->
+<br>
+<style>
+    table {
+        width: 400px;
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+        width: auto;
+        /* This makes the columns auto-adjustable */
+    }
+    
+    th {
+        background-color: #dbd9d9;
+    }
+    
+    .table-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .notice-table {
+        border: 1px solid #ccc;
+        margin-right: 20px;
+        /* Add some spacing between table and image */
+    }
+    
+    .image-container {
+        flex: 1;
+        /* Allow the image container to expand and fill the available space */
+        text-align: right;
+        /* Align the images to the right */
+    }
+    
+    .image {
+        max-width: px;
+        /* Set the maximum width for the images */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+</style>
 
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <!-- Blog list Start -->
-            <div class="col-lg-8">
-                <div class="row g-5">
-                     <h2> make 3 table with 2 columns for title and link.
-                        <br/>  table 1- Interships/job notice
-                        <br/>table 2 - fee related notice
-                        <br/> table 3 - events notices
-                     </h2>
-                </div>
-            </div>
-            <!-- Blog list End -->
+<table>
+    <tr>
+        <th>GEHU-NOTICE</th>
+    </tr>
+    {% for file in file %}
+    <tr>
+        <td><a href="{{ file.file.url }}" target="_blank"><b>{{file.name}}</b></a></td>
+    </tr>
+    {% endfor %}
 
-            <!-- Sidebar Start -->
-            <div class="col-lg-4">
-                  
+</table>
 
-                <!-- Recent Post Start -->
-                <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
-                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                        <h3 class="mb-0">Recent News</h3>
-                    </div>
-                    <!-- partial:index.partial.html -->
-                    <div class="container">
-                        <section class="background">
-                        <div class="content-wrapper">
-                           
-                        </div>
-                        </section>
-                        <section class="background">
-                        <div class="content-wrapper">
-                            
-                        </div>
-                        </section>
-                        <section class="background">
-                        <div class="content-wrapper">
-                            <p class="content-title">Etiam consequat lectus.</p>
-                            <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
-                        </div>
-                        </section>
-                    </div>
-                    
-  
-                </div>
-                <!-- Recent Post End -->
-               
-            </div>
-            <!-- Sidebar End -->
-        </div>
-    </div>
-</div>
-{%endblock%}
+<!-- <div class="image-container">
+    {% for img in img %}
+    <img src="{{img.file.url}}" alt="Your Image"> {% endfor %}
+</div> -->
+
+<br/> {%endblock%}

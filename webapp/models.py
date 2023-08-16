@@ -75,3 +75,22 @@ class Alumni(models.Model):
         return f"{self.name} - {self.dept} - {self.batch}"
     
 
+class NoticePdf(models.Model):
+    name=models.CharField(max_length=200, blank=True, null=True)
+    file=models.FileField(upload_to='notices_pdf/', blank=True, null=True)
+    
+    def __str__(self):
+        return self.name
+
+class Notice_Banner(models.Model):
+    name=models.CharField(max_length=200, blank=True, null=True)
+    file=models.ImageField(upload_to='notices_images/', blank=True, null=True)
+    
+    def __str__(self):
+        return self.name
+    
+
+    
+
+
+
